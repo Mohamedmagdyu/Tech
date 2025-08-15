@@ -1,184 +1,226 @@
 <!DOCTYPE html>
-
-<html dir="rtl" lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>تشغيل جميع العاب البلاي استيشن علي الايفون - محمد مجدي</title>
-<link href="styles.css" rel="stylesheet"/>
-<link href="video-page.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشغيل جميع العاب البلاي استيشن علي الايفون - محمد مجدي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="video-page.css">
+    <style>
+        /* تصميم قسم التحميل الجديد */
+        .download-section-updated {
+            background-color: #2c2c2e; /* خلفية داكنة للقسم */
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            text-align: center;
+        }
 
-<style>
-.download-btn {
-  display: inline-block;
-  margin: 10px 0;
-  padding: 12px 20px;
-  background: linear-gradient(45deg, #ff416c, #ff4b2b);
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  animation: pulse 1.5s infinite;
-}
+        .download-section-updated h2 {
+            margin-bottom: 25px;
+            color: #fff;
+            font-size: 24px;
+        }
 
-.download-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 5px 15px rgba(255, 75, 43, 0.4);
-}
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* تصميم متجاوب */
+            gap: 20px;
+        }
 
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255, 75, 43, 0.7); }
-  70% { box-shadow: 0 0 0 10px rgba(255, 75, 43, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 75, 43, 0); }
-}
-</style>
+        .download-item {
+            background-color: #3a3a3c;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .download-item:hover {
+            transform: translateY(-8px); /* تأثير حركة عند المرور */
+            box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+        }
+
+        .download-item h4 {
+            color: #f0f0f0;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: linear-gradient(45deg, #007aff, #00c6ff); /* تدرج لوني جذاب */
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-download:hover {
+            transform: scale(1.05); /* تكبير بسيط عند المرور */
+            background: linear-gradient(45deg, #0056b3, #00a2d9);
+        }
+    </style>
 </head>
 <body>
-<!-- خلفية النجوم المتحركة -->
-<div class="stars-background">
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-<div class="star"></div>
-</div>
-<!-- الهيدر -->
-<header class="header">
-<div class="container">
-<div class="logo">
-<h1>محمد مجدي</h1>
-<span>iOS Steps</span>
-</div>
-<nav class="nav">
-<ul>
-<li><a href="index.html">الرئيسية</a></li>
-<li><a href="index.html#videos">الفيديوهات</a></li>
-<li><a href="index.html#about">حول</a></li>
-<li><a href="https://www.youtube.com/@iossteps" target="_blank">قناة اليوتيوب</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<!-- محتوى الفيديو -->
-<main class="video-content">
-<div class="container">
-<!-- زر العودة -->
-<div class="back-button">
-<a class="btn btn-back" href="index.html">← العودة للرئيسية</a>
-</div>
-<!-- عنوان الفيديو -->
-<h1 class="video-title">تشغيل جميع العاب البلاي استيشن علي الايفون 👇🏻</h1>
-<!-- الفيديو المدمج -->
-<div class="video-wrapper">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/AYon_A_S26k" title="تشغيل جميع العاب البلاي استيشن علي الايفون">
-</iframe>
-</div>
-<!-- معلومات الفيديو -->
-<div class="video-info-section">
-<div class="video-stats">
-<span class="views">مشاهدات متنوعة</span>
-<span class="date">تاريخ النشر متنوع</span>
-</div>
-<!-- وصف الفيديو -->
-<div class="video-description">
-<h2>وصف الفيديو</h2>
-<p>
+    <!-- خلفية النجوم المتحركة -->
+    <div class="stars-background">
+        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+        <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+    </div>
+
+    <!-- الهيدر -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>محمد مجدي</h1>
+                <span>iOS Steps</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#videos">الفيديوهات</a></li>
+                    <li><a href="index.html#about">حول</a></li>
+                    <li><a href="https://www.youtube.com/@iossteps" target="_blank">قناة اليوتيوب</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- محتوى الفيديو -->
+    <main class="video-content">
+        <div class="container">
+            <!-- زر العودة -->
+            <div class="back-button">
+                <a href="index.html" class="btn btn-back">← العودة للرئيسية</a>
+            </div>
+
+            <!-- عنوان الفيديو -->
+            <h1 class="video-title">تشغيل جميع العاب البلاي استيشن علي الايفون 👇🏻</h1>
+
+            <!-- الفيديو المدمج -->
+            <div class="video-wrapper">
+                <iframe 
+                    src="https://www.youtube.com/embed/AYon_A_S26k" 
+                    title="تشغيل جميع العاب البلاي استيشن علي الايفون"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <!-- معلومات الفيديو -->
+            <div class="video-info-section">
+                <div class="video-stats">
+                    <span class="views">مشاهدات متنوعة</span>
+                    <span class="date">تاريخ النشر متنوع</span>
+                </div>
+
+                <!-- وصف الفيديو -->
+                <div class="video-description">
+                    <h2>وصف الفيديو</h2>
+                    <p>
                         في هذا الفيديو، سأشرح لكم كيفية تشغيل جميع ألعاب البلاي ستيشن على الايفون الخاص بكم.
                     </p>
-<h3>ما ستتعلمه في هذا الفيديو:</h3>
-<ul>
-<li>أفضل محاكيات البلاي ستيشن للايفون.</li>
-<li>خطوات تثبيت المحاكي والألعاب.</li>
-<li>نصائح للحصول على أفضل أداء للألعاب.</li>
-</ul>
-<h3>الكلمات المفتاحية:</h3>
+                    
+                    <h3>ما ستتعلمه في هذا الفيديو:</h3>
+                    <ul>
+                        <li>أفضل محاكيات البلاي ستيشن للايفون.</li>
+                        <li>خطوات تثبيت المحاكي والألعاب.</li>
+                        <li>نصائح للحصول على أفضل أداء للألعاب.</li>
+                    </ul>
+                </div>
 
+                <!-- قسم التحميل المحدث -->
+                <div class="download-section-updated">
+                    <h2>روابط التحميل</h2>
+                    <div class="download-grid">
+                        <div class="download-item">
+                            <h4>تطبيق للأيفون (Mediafire )</h4>
+                            <a href="https://www.mediafire.com/file/iuhyhz0kq09p26n/%25E4%25B9%2590%25E4%25BA%25AB%25E5%25BF%25AB%25E6%25B8%25B8-1.5.4.ipa/file" class="btn-download" target="_blank">تحميل الآن</a>
+                        </div>
+                        <div class="download-item">
+                            <h4>شرح تثبيت التطبيق</h4>
+                            <a href="https://apgy.in/yt/AYon_A_S26k" class="btn-download" target="_blank">مشاهدة الشرح</a>
+                        </div>
+                        <div class="download-item">
+                            <h4>تطبيق للأندرويد (Mediafire )</h4>
+                            <a href="https://www.mediafire.com/file/6661o7tqsurg7qp/Morocket.apk/file" class="btn-download" target="_blank">تحميل الآن</a>
+                        </div>
+                        <div class="download-item">
+                            <h4>ملف ID-Game (Mediafire )</h4>
+                            <a href="https://www.mediafire.com/file/5anawygoczxkj6i/ID-Game.xls/file" class="btn-download" target="_blank">تحميل الآن</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- فيديوهات ذات صلة -->
+                <div class="related-videos">
+                    <h2>فيديوهات ذات صلة</h2>
+                    <div class="related-grid">
+                        <a href="video1.html" class="related-video">
+                            <img src="https://img.youtube.com/vi/zNOA8Gwr-Fo/maxresdefault.jpg" alt="اختصار لتحويل الصور الي PDF بدون برامج">
+                            <div class="related-info">
+                                <h4>اختصار لتحويل الصور الي PDF بدون برامج</h4>
+                                <span>شاهد الآن</span>
+                            </div>
+                        </a>
+                        
+                        <a href="video2.html" class="related-video">
+                            <img src="https://img.youtube.com/vi/G2Qym-n7Xcs/maxresdefault.jpg" alt="تفعيل ميزه الذكاء الاصطناعي في الانستقرام">
+                            <div class="related-info">
+                                <h4>تفعيل ميزه الذكاء الاصطناعي في الانستقرام</h4>
+                                <span>شاهد الآن</span>
+                            </div>
+                        </a>
+                        
+                        <a href="video3.html" class="related-video">
+                            <img src="https://img.youtube.com/vi/haREOEs2jFo/maxresdefault.jpg" alt="اضافة ChatGPT في تطبيق Whatsspp">
+                            <div class="related-info">
+                                <h4>اضافة ChatGPT في تطبيق Whatsspp</h4>
+                                <span>شاهد الآن</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-
-<!-- روابط التحميل -->
-<div class="download-section">
-<h2>روابط مفيدة وتحميلات</h2>
-<div class="download-links">
-<a class="download-link" href="https://tools.apgy.in/v/AYon_A_S26k" target="_blank">
-<div class="download-icon">🔗</div>
-<div class="download-info">
-<h4>رابط الفيديو</h4>
-<p>شرح تشغيل ألعاب البلاي ستيشن على الايفون</p>
-</div>
-</a>
-</div>
-</div>
-<!-- فيديوهات ذات صلة -->
-<div class="related-videos">
-<h2>فيديوهات ذات صلة</h2>
-<div class="related-grid">
-<a class="related-video" href="video1.html">
-<img alt="اختصار لتحويل الصور الي PDF بدون برامج" src="https://img.youtube.com/vi/zNOA8Gwr-Fo/maxresdefault.jpg"/>
-<div class="related-info">
-<h4>اختصار لتحويل الصور الي PDF بدون برامج</h4>
-<span>شاهد الآن</span>
-</div>
-</a>
-<a class="related-video" href="video2.html">
-<img alt="تفعيل ميزه الذكاء الاصطناعي في الانستقرام" src="https://img.youtube.com/vi/G2Qym-n7Xcs/maxresdefault.jpg"/>
-<div class="related-info">
-<h4>تفعيل ميزه الذكاء الاصطناعي في الانستقرام</h4>
-<span>شاهد الآن</span>
-</div>
-</a>
-<a class="related-video" href="video3.html">
-<img alt="اضافة ChatGPT في تطبيق Whatsspp" src="https://img.youtube.com/vi/haREOEs2jFo/maxresdefault.jpg"/>
-<div class="related-info">
-<h4>اضافة ChatGPT في تطبيق Whatsspp</h4>
-<span>شاهد الآن</span>
-</div>
-</a>
-</div>
-</div>
-<p>App for iPhone: <a class="download-btn" href="https://www.mediafire.com/file/iuhyhz0kq09p26n/%25E4%25B9%2590%25E4%25BA%25AB%25E5%25BF%25AB%25E6%25B8%25B8-1.5.4.ipa/file" target="_blank">تحميل من هنا</a></p><p>شرح تثبيت التطبيق: <a class="download-btn" href="https://apgy.in/yt/AYon_A_S26k" target="_blank">اضغط هنا</a></p><p>App for Android: <a class="download-btn" href="https://www.mediafire.com/file/6661o7tqsurg7qp/Morocket.apk/file" target="_blank">تحميل من هنا</a></p><p>ID-Game: <a class="download-btn" href="https://www.mediafire.com/file/5anawygoczxkj6i/ID-Game.xls/file" target="_blank">تحميل من هنا</a></p></div>
-</div>
-</div></main>
-<!-- الفوتر -->
-<footer class="footer">
-<div class="container">
-<div class="footer-content">
-<div class="footer-section">
-<h3>محمد مجدي</h3>
-<p>خبير التطبيقات والخدمات المجانية</p>
-</div>
-<div class="footer-section">
-<h3>روابط مهمة</h3>
-<ul>
-<li><a href="https://www.youtube.com/@iossteps" target="_blank">قناة اليوتيوب</a></li>
-<li><a href="https://t.me/mmsteps" target="_blank">تليجرام</a></li>
-</ul>
-</div>
-<div class="footer-section">
-<h3>تواصل معنا</h3>
-<p>للاستفسارات والتعاون</p>
-</div>
-</div>
-<div class="footer-bottom">
-<p>© 2025 محمد مجدي - iOS Steps. جميع الحقوق محفوظة.</p>
-</div>
-</div>
-</footer>
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>محمد مجدي</h3>
+                    <p>خبير التطبيقات والخدمات المجانية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط مهمة</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/@iossteps" target="_blank">قناة اليوتيوب</a></li>
+                        <li><a href="https://t.me/mmsteps" target="_blank">تليجرام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <p>للاستفسارات والتعاون</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 محمد مجدي - iOS Steps. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
